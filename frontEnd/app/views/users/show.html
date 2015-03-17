@@ -1,0 +1,26 @@
+<fieldset>
+    <legend>Usuário {{user.id}}</legend>
+</fieldset>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Perfil
+    </div>
+    <div class="panel-body">
+        <label>Nome: </label>
+        </span>{{user.nome}}
+        <br/>
+        <label>Email: </label>
+        </span>{{user.email}}
+        <br/>
+        <label>Criado em : </label>
+        </span>{{user.created_at}}
+        <br/>
+        <label>Modificado em : </label>
+        </span>{{user.updated_at}}
+        <br/>
+        <div class="pull-right">
+            <a ui-sref="usersIndex" class="btn btn-primary">Voltar</a>
+            <a ui-sref="usersEdit({id:user.id})" class="btn btn-primary">Editar</a>
+        </div>
+    </div>
+</div>

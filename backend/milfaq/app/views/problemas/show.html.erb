@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @problema.descricao %>
+</p>
+
+<p>
+  <strong>Resposta:</strong>
+  <%= @problema.resposta %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @problema.status %>
+</p>
+
+<p>
+  <strong>Relator:</strong>
+  <%= @problema.relator %>
+</p>
+
+<%= link_to 'Edit', edit_problema_path(@problema) %> |
+<%= link_to 'Back', problemas_path %>
