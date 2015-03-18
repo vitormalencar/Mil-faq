@@ -1,4 +1,11 @@
 'use strict';
+/**
+ * @ngdoc function
+ * @name milfaqApp.controller:UsersControlles
+ * @description
+ * # UsersControlles
+ * Controller of the milfaqApp
+ */
 angular.module('milfaqApp')
 
 .controller('UsersIndexController', ['$scope', 'usersFactory', function($scope, usersFactory) {

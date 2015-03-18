@@ -19,17 +19,13 @@ angular
     'ngTouch',
     'usersFactory',
   ])
+
 .config(function ($stateProvider,$urlRouterProvider) {
    $stateProvider
     .state('/', {
       url:'/',
       templateUrl: 'views/main.html',
       controller: 'MainCtrl'
-    })
-    .state('about', {
-      url:'/about',
-      templateUrl: 'views/about.html',
-      controller: 'AboutCtrl'
     })
     .state('usersIndex', {
       url:'/users',
@@ -50,7 +46,6 @@ angular
       url:'/users/:id/edit',
       templateUrl: 'views/users/edit.html',
       controller: 'UsersEditController'
-    });
-
+    })
    $urlRouterProvider.otherwise('/');
 });
